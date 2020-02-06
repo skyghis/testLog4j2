@@ -31,5 +31,6 @@ public final class App {
         context.setConfigLocation(log4jConfiguration.toUri());
 
         LOGGER.debug("reconfig from code"); // Should be logged
+        LOGGER.info("shutdown"); // Should be logged with [OUTER] prefix
     }
 }
